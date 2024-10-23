@@ -97,6 +97,7 @@
             <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
               <form>
                 <!-- Email input -->
+                <p class="text-center fw-bold mb-3">Login</p>
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input type="email" id="loginName" class="form-control" />
                   <label class="form-label" for="loginName">Email/No HP</label>
@@ -112,17 +113,12 @@
 
                 <!-- Submit button -->
                 <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
-
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>Not a member? <a href="#!">Register</a></p>
-                </div>
               </form>
             </div>
             <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
               <form>
+                <p class="text-center fw-bold mb-3">Formulir Pendaftaran Akun Siswa Baru</p>
                 <!-- <div class="text-center mb-3">
-                  <p>Sign up with:</p>
                   <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-facebook-f"></i>
                   </button>
@@ -144,39 +140,39 @@
 
                 <!-- Name input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="registerName" class="form-control" />
-                  <label class="form-label" for="registerName">Nama Siswa</label>
+                  <input type="text" id="nama_siswa" name="nama_siswa" class="form-control" />
+                  <label class="form-label" for="nama_siswa">Nama Siswa</label>
                 </div>
 
                 <!-- Username input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="registerUsername" class="form-control" />
-                  <label class="form-label" for="registerUsername">No HP</label>
+                  <input type="number" minlength="10" maxlength="13" id="no_hp" name="no_hp" class="form-control" />
+                  <label class="form-label" for="no_hp">No HP/Whatsapp</label>
                 </div>
 
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="registerEmail" class="form-control" />
-                  <label class="form-label" for="registerEmail">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" />
+                  <label class="form-label" for="email">Email</label>
                 </div>
 
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="registerPassword" class="form-control" />
-                  <label class="form-label" for="registerPassword">Password</label>
+                  <input type="password" id="password" name="password" class="form-control" />
+                  <label class="form-label" for="password">Password</label>
                 </div>
 
                 <!-- Repeat Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="registerRepeatPassword" class="form-control" />
-                  <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                  <input type="password" id="ulangi_password" name="ulangi_password" class="form-control" />
+                  <label class="form-label" for="ulangi_password">Ulangi Password</label>
                 </div>
 
                 <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
+                <!-- <div class="form-check d-flex justify-content-center mb-4">
                   <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText" />
                   <label class="form-check-label" for="registerCheck"> I have read and agree to the terms </label>
-                </div>
+                </div> -->
 
                 <!-- Submit button -->
                 <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-3">Sign in</button>

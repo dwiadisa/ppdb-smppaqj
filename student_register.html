@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>PPDB SMP Plus Al-Qodiri Jember</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/logo-smp.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body style="background-color: #022377">
+    <!-- Start your project here-->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="https://mdbgo.com/">
+          <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px" />
+        </a>
+
+        <!-- Toggle button -->
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">PPDB SMPP AQJ</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <div class="d-flex align-items-center">
+            <div class="px-3 me-2">Nama User</div>
+            <!-- <button data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">Login</button> -->
+            <a data-mdb-ripple-init type="button" class="btn btn-danger me-3">Logout</a>
+            <!-- <a data-mdb-ripple-init class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-github"></i></a> -->
+          </div>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container mt-5 mb-5 py-5">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="text-center fw-bold">Formulir Pendaftaran PPDB SMP Plus Al-Qodiri Jember</h1>
+          <hr />
+
+          ini adalah formnya
+
+          <style>
+            .wizard-step {
+              display: none;
+            }
+            .wizard-step.active {
+              display: block;
+            }
+          </style>
+
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 20%" id="progressBar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <form id="wizardForm">
+            <div class="wizard-step active" id="step1">
+              <h5>Step 1: Personal Information</h5>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step2">
+              <h5>Step 2: Contact Information</h5>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step3">
+              <h5>Step 3: Address</h5>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" required />
+              </div>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step4">
+              <h5>Step 4: Additional Information</h5>
+              <div class="mb-3">
+                <label for="info" class="form-label">Additional Info</label>
+                <textarea class="form-control" id="info" rows="3" required></textarea>
+              </div>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step5">
+              <h5>Step 5: Review & Submit</h5>
+              <p>Please review your information before submitting.</p>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+
+          <!-- <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-primary" data-mdb-ripple-init>Button</button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    let currentStep = 1;
+    const totalSteps = 5;
+
+    function showStep(step) {
+      $(".wizard-step").removeClass("active");
+      $("#step" + step).addClass("active");
+      updateProgressBar(step);
+    }
+
+    function updateProgressBar(step) {
+      const progressPercentage = (step / totalSteps) * 100;
+      $("#progressBar")
+        .css("width", progressPercentage + "%")
+        .attr("aria-valuenow", progressPercentage);
+    }
+
+    function validateStep(step) {
+      let isValid = true;
+      $("#step" + step + " input, #step" + step + " textarea").each(function () {
+        if ($(this).val() === "") {
+          isValid = false;
+          $(this).addClass("is-invalid");
+        } else {
+          $(this).removeClass("is-invalid");
+        }
+      });
+      return isValid;
+    }
+
+    $(".next").click(function () {
+      if (validateStep(currentStep)) {
+        if (currentStep < totalSteps) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      } else {
+        alert("Please fill in all fields before proceeding.");
+      }
+    });
+
+    $(".prev").click(function () {
+      if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    });
+
+    $("#wizardForm").submit(function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Collect data from the form
+      const formData = {
+        name: $("#name").val(),
+        email: $("#email").val(),
+        address: $("#address").val(),
+        info: $("#info").val(),
+      };
+
+      // Send data to the server using AJAX
+      $.ajax({
+        type: "POST",
+        url: "your-server-endpoint", // Replace with your server endpoint URL
+        data: formData,
+        success: function (response) {
+          alert("Form submitted successfully!");
+          console.log(response); // Display server response
+        },
+        error: function (error) {
+          alert("An error occurred while submitting the form.");
+          console.error(error); // Display error in console
+        },
+      });
+    });
+  });
+</script>

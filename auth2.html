@@ -2,125 +2,156 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Login SMP Plus Al-Qodiri Jember</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <!-- MDB -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizard Form with MDBootstrap</title>
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .wizard-step {
+        display: none;
+      }
+      .wizard-step.active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <!-- Start your project here-->
-
-    <div class="container">
-      <!-- Section: Design Block -->
-      <section class="text-center">
-        <!-- Background image -->
-        <div class="p-5 bg-image" style="background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg'); height: 300px"></div>
-        <!-- Background image -->
-
-        <div class="card mx-4 mx-md-5 shadow-5-strong bg-body-tertiary" style="margin-top: -100px; backdrop-filter: blur(30px)">
-          <div class="card-body py-5 px-md-5">
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="fw-bold mb-5">Sign up now</h2>
-                <form>
-                  <!-- 2 column grid layout with text inputs for the first and last names -->
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form3Example1" class="form-control" />
-                        <label class="form-label" for="form3Example1">First name</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form3Example2" class="form-control" />
-                        <label class="form-label" for="form3Example2">Last name</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Email input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Email address</label>
-                  </div>
-
-                  <!-- Password input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="form3Example4" class="form-control" />
-                    <label class="form-label" for="form3Example4">Password</label>
-                  </div>
-
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                    <label class="form-check-label" for="form2Example33"> Subscribe to our newsletter </label>
-                  </div>
-
-                  <!-- Submit button -->
-                  <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign up</button>
-
-                  <!-- Register buttons -->
-                  <div class="text-center">
-                    <p>or sign up with:</p>
-                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-
-                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-google"></i>
-                    </button>
-
-                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-twitter"></i>
-                    </button>
-
-                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-github"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
+    <div class="container mt-5">
+      <h2>Wizard Form with Progress Bar</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 20%" id="progressBar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-        </div>
-      </section>
-      <!-- Section: Design Block -->
-    </div>
+          <form id="wizardForm">
+            <div class="wizard-step active" id="step1">
+              <h5>Step 1: Personal Information</h5>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
 
-    <!-- <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-        <div class="text-center">
-          <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">MDB Team</p>
-          <a
-            class="btn btn-primary btn-lg"
-            data-mdb-ripple-init
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Start MDB tutorial</a
-          >
+            <div class="wizard-step" id="step2">
+              <h5>Step 2: Contact Information</h5>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step3">
+              <h5>Step 3: Address</h5>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" required />
+              </div>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step4">
+              <h5>Step 4: Additional Information</h5>
+              <div class="mb-3">
+                <label for="info" class="form-label">Additional Info</label>
+                <textarea class="form-control" id="info" rows="3" required></textarea>
+              </div>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="button" class="btn btn-primary next">Next</button>
+            </div>
+
+            <div class="wizard-step" id="step5">
+              <h5>Step 5: Review & Submit</h5>
+              <p>Please review your information before submitting.</p>
+              <button type="button" class="btn btn-secondary prev">Previous</button>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
-    </div> -->
-    <!-- End your project here-->
+    </div>
 
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.5.0/mdb.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let currentStep = 1;
+        const totalSteps = 5;
+
+        function showStep(step) {
+          $(".wizard-step").removeClass("active");
+          $("#step" + step).addClass("active");
+          updateProgressBar(step);
+        }
+
+        function updateProgressBar(step) {
+          const progressPercentage = (step / totalSteps) * 100;
+          $("#progressBar")
+            .css("width", progressPercentage + "%")
+            .attr("aria-valuenow", progressPercentage);
+        }
+
+        function validateStep(step) {
+          let isValid = true;
+          $("#step" + step + " input, #step" + step + " textarea").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+              $(this).addClass("is-invalid");
+            } else {
+              $(this).removeClass("is-invalid");
+            }
+          });
+          return isValid;
+        }
+
+        $(".next").click(function () {
+          if (validateStep(currentStep)) {
+            if (currentStep < totalSteps) {
+              currentStep++;
+              showStep(currentStep);
+            }
+          } else {
+            alert("Please fill in all fields before proceeding.");
+          }
+        });
+
+        $(".prev").click(function () {
+          if (currentStep > 1) {
+            currentStep--;
+            showStep(currentStep);
+          }
+        });
+
+        $("#wizardForm").submit(function (e) {
+          e.preventDefault(); // Prevent default form submission
+
+          // Collect data from the form
+          const formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            address: $("#address").val(),
+            info: $("#info").val(),
+          };
+
+          // Send data to the server using AJAX
+          $.ajax({
+            type: "POST",
+            url: "your-server-endpoint", // Replace with your server endpoint URL
+            data: formData,
+            success: function (response) {
+              alert("Form submitted successfully!");
+              console.log(response); // Display server response
+            },
+            error: function (error) {
+              alert("An error occurred while submitting the form.");
+              console.error(error); // Display error in console
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>
